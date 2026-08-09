@@ -91,7 +91,7 @@
 
 ## 2. Binary Search
 
-* It is a searching algorithm which works on sorted collection by d**l ,
+* It is a searching algorithm which works on sorted collection by repeatedly , dividing the collection into two halves until we found targeted element.
 * *Ex :- Source code :-[binarysearch.py](./binnarysearch.py)*
 
   
