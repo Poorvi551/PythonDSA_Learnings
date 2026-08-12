@@ -129,6 +129,40 @@
      If mid2 value == targeted element, return index of mid2 value.
   5. If key < next val
 
-   
-  
+
+```# Ternary Search
+
+def ternary_search(col,key):
+    li=0
+    hi=len(col)-1
+    while li<=hi:
+        mid1=li+(hi-li)//3
+        mid2=hi-(hi-li)//3
+        if key==col[mid1]:
+            return mid1
+        if key==col[mid2]:
+            return mid2
+        if key<col[mid1]:
+            hi=mid1-1
+        elif key>col[mid2]:
+            li=mid2+1
+        else:
+            li=mid1+1
+            hi=mid2-1
+    return -1
+col=eval(input("Enter collection:"))
+key= int(input("Enter the value:"))
+print(ternary_search(col,key))
+```
+
+## Sorting Algorithm 
+
+* It is used to arrange the values either in ascending or descending order.
+* There are some type of sorting algorithm:
+
+   1. Bubble sort
+   2. Selection sort
+   3. Insertion sort
+   4. Quick sort
+   5. Merge sort
   
