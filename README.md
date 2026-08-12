@@ -117,12 +117,14 @@
 * Algorithm :-
 
   1. Consider two pointers
-        li=0
-        hi=len(col)-1
+        * li=0
+          
+        * hi=len(col)-1
   2. Run the loop until li>hi
   3. Find the mid values
-        mid1 = li+(hi-li)//3
-        mid2 = hi-(hi-li)//3
+        * mid1 = li+(hi-li)//3
+          
+        * mid2 = hi-(hi-li)//3
   4. If mid1 value == targeted element, return index of mid1 value.
      If mid2 value == targeted element, return index of mid2 value.
   5. If key < next val
