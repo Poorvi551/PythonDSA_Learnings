@@ -5,6 +5,7 @@
 1. [Time complexity](#time-complexity)
 2. [Space complexity](#space-complexity)
 3. [Searching Algorithm](#searching-algorithm)
+4. [Sorting Algorithm](#sorting-algorithm)
    
 ## Data Structures
 
@@ -165,4 +166,19 @@ print(ternary_search(col,key))
    3. Insertion sort
    4. Quick sort
    5. Merge sort
+
+## 1. Bubble Sort :
+
+* It is the sorting algorithm where each and every element will get *swapped* based on condition in order to sort the values.
+* It performs n-1 passes to arrange the values.
+* In each and every pass, the sorted element will be at the last.
+
+* Steps :
+
+1. Consider the collection
+2. Consider the starting value.
+3. Compare current value is greater than swap it or else keep as it is
+4. Consider the next pair of elements and repeat step 3 and step 4 until the value is sorted.
+5. After one complete pass, the largest element will be at the last.
+6. repeat the same steps for remaining values by ignoring the last sorted one. 
   
