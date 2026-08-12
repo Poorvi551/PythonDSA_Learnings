@@ -1,3 +1,4 @@
+# Selection Sort
 col=eval(input("Enter collection:"))
 for passno in range(1,len(col)):
     minp=passno-1
