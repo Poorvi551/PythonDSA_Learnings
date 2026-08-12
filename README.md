@@ -94,5 +94,40 @@
 * It is a searching algorithm which works on sorted collection by repeatedly , dividing the collection into two halves until we found targeted element.
 * *Ex :- Source code :-[binarysearch.py](./binnarysearch.py)*
 
+      def binary_search(l,key):
+          st=0
+          end=len(l)+1
+          while st<=end:
+             mid = st + end // 2
+             if key==l[mid]:
+                return mid
+             elif key<l[mid]:
+                end=mid-1
+             else:
+                st=mid+1
+           return -1
+      l=eval(input("Enter the sorted collection:"))
+      key=int(input("Enter the key: "))
+      print(binary_search(l,key))
+
+## 3. Ternary Search
+
+* It is a searching algorithm which works on sorted collection by repeatedly dividing the collection into 3 parts.
+
+* Algorithm :-
+
+1. Consider two pointers
+   li=0
+   hi=len(col)-1
+
+2. Run the loop until li>hi
+3. Find the mid values
+   mid1 = li+(hi-li)//3
+   mid2 = hi-(hi-li)//3
+4. If mid1 value == targeted element, return index of mid1 value.
+   If mid2 value == targeted element, return index of mid2 value.
+5. If key < next val
+
+   
   
   
