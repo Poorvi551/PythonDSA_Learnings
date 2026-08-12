@@ -217,3 +217,17 @@ for passno in range(1,len(col)):
     col[passno-1],col[minp]=col[minp],col[passno-1]
 print(col)
 ```
+## 3. Insertion Sort :
+
+* It is the sorting algorithm where the current element will be compared with its previous element for the sorting purpose.
+  
+* Steps :-
+
+   1. Consider the collection
+   2. Start from the second value
+   3. Compare the current element with its previous element
+   4. swap the values/shift the largest element to the right
+   5. Decrement the position by one
+   6. Repeat the same steps until all the elements are sorted.
+
+* Source code :- [insertionsort.py](./insertionsort.py)
