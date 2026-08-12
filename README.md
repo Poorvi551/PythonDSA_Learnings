@@ -130,7 +130,7 @@
      If mid2 value == targeted element, return index of mid2 value.
   5. If key < next val
 
-
+*  *Source code :- [ternarysearch](./ternarysearch)*
 ```# Ternary Search
 
 def ternary_search(col,key):
@@ -181,4 +181,16 @@ print(ternary_search(col,key))
 4. Consider the next pair of elements and repeat step 3 and step 4 until the value is sorted.
 5. After one complete pass, the largest element will be at the last.
 6. repeat the same steps for remaining values by ignoring the last sorted one. 
-  
+
+* Source code :- [bubblesort](./bubblesort)
+```
+def bubble_sort(col):
+    for i in range(1,len(col)):
+        for j in range(0,len(col)-i):
+            if col[j]>col[j+1]:
+                col[j],col[j+1]=col[j+1],col[j]
+    return col
+col=eval(input("Enter collection:"))
+print(bubble_sort(col))
+```
+
