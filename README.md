@@ -130,7 +130,7 @@
      If mid2 value == targeted element, return index of mid2 value.
   5. If key < next val
 
-*  *Source code :- [ternarysearch](./ternarysearch.py)*
+*  *Source code :- [ternarysearch.py](./ternarysearch.py)*
 ```# Ternary Search
 
 def ternary_search(col,key):
@@ -194,3 +194,26 @@ col=eval(input("Enter collection:"))
 print(bubble_sort(col))
 ```
 
+## 2. Selection Sort :
+
+* It is a sorting algorithm where it repeatedly selects a smallest value and swap it with the first unsorted element.
+
+* Algorithm :
+
+  1. Choose the minimum position
+  2. Find the smallest element in the first unsorted array.
+  3. Swap the smallest element with the first unsorted element
+  4. Move the minimum position to one step forward.
+  5. repeat the step 2 to step 4 until all the elements are sorted.
+
+* Source code :- [selectionsort.py](./selectionsort.py)
+```
+col=eval(input("Enter collection:"))
+for passno in range(1,len(col)):
+    minp=passno-1
+    for i in range(passno,len(col)):
+        if col[i]<col[minp]:
+            minp=i
+    col[passno-1],col[minp]=col[minp],col[passno-1]
+print(col)
+```
