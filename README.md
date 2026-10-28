@@ -240,4 +240,23 @@ for passno in range(1,len(col)):
         i=i-1
 print(col)
 ```
+## 4. Quick Sort :
 
+* **Pivot element -** It can be any element from the list and that element to be stored in a sorted position.
+  
+* **Sorted value -**
+
+* The element where before this element all the values are smaller than pivot and after the pivot all the elements are greater than this element.
+* It is sorting algorithm where pivot value is considered to store it in a sorted position.
+* Steps :-
+
+  1. Consider the collection
+  2. Choose pivot element(first value)
+  3. Initialize two pointers.
+       i = low+1
+       j = high
+  4. Partition the list, Run the loop continuously until i becomes greater than j.
+   * Move the i val to right until you find the element is smaller than the pivot and increment the val of i by col[i]<pivot.
+   * Move j value to left until the element are greater than pivot and decrement j by 1col[j]>pivot.
+   * If i<j,swap col[i] value and col[j] value.
+  5. When the loop ends ,swap pivot element and j value and return 
