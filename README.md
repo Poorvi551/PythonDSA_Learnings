@@ -288,3 +288,13 @@ col=eval(input("Enter list:"))
 quick_sort(col,0,len(col)-1)
 print(col)
 ```
+
+## 5. Merge Sort :
+
+* It works on the principle called divide and conquer will divide the collection into two halves(left and right) continuously until we get one element.
+
+* Steps :-
+
+1. Divide -> Dividing the collection into two halves until we get as a element.
+2. Conquer -> Recursively sort the left and right collection.
+3. Merge -> Merge the two stored collection by comparing the values.
