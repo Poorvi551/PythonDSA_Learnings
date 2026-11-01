@@ -259,4 +259,32 @@ print(col)
    * Move the i val to right until you find the element is smaller than the pivot and increment the val of i by col[i]<pivot.
    * Move j value to left until the element are greater than pivot and decrement j by 1col[j]>pivot.
    * If i<j,swap col[i] value and col[j] value.
-  5. When the loop ends ,swap pivot element and j value and return 
+  5. When the loop ends ,swap pivot element and j value and return j.
+  6. Recursively sort the sublist.
+  7. Whenever low>high, there will be no value left to sort it stops the execution.
+
+* Source code :- [quicksort.py](./quicksort.py)
+```
+def sorted_pos(col,low,high):
+    pivot=col[low]
+    i=low+1
+    j=high
+    while i<=j:
+        while i<=j and col[i]<pivot:
+            i=i+1
+        while i<=j and col[j]>pivot:
+            j=j-1
+        if i<j:
+            col[i],col[j]=col[j],col[i]
+    col[j],col[low]=col[low],col[j]
+    return j
+def quick_sort(col,low,high):
+    if low>high:
+        return
+    sp=sorted_pos(col,low,high)
+    quick_sort(col,low,sp-1)
+    quick_sort(col,sp+1,high)
+col=eval(input("Enter list:"))
+quick_sort(col,0,len(col)-1)
+print(col)
+```
