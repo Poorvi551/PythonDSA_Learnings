@@ -420,5 +420,15 @@ s.push(70)
 * Source code :- [stackusingbuiltin.py](./stackusingbuiltin.py)
 * Source code :- [stackbuiltin2.py](./stackbuiltin2.py)
 ```
-
+from collections import deque
+st=deque()
+st.append(10)
+st.append(20)
+st.append(30)
+st.append(40)
+st.append(50)
+st.pop()
+print(st)
+print(st[-1])
+```
   
