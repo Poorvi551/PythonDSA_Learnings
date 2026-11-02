@@ -415,5 +415,10 @@ print(s.peek())
 print(s.display())
 s.push(70)
 ```
+## 2. Stack using inbuilt module :
+
+* Source code :- [stackusingbuiltin.py](./stackusingbuiltin.py)
+* Source code :- [stackbuiltin2.py](./stackbuiltin2.py)
+```
 
   
