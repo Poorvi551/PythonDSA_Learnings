@@ -1,4 +1,4 @@
-# PythonDSA_PentagonSpace
+# Python_DSA
 
 ## Table of Contents
 
@@ -298,3 +298,92 @@ print(col)
 1. Divide -> Dividing the collection into two halves until we get as a element.
 2. Conquer -> Recursively sort the left and right collection.
 3. Merge -> Merge the two stored collection by comparing the values.
+
+* Source code :- [mergesort.py](./mergesort.py)
+```
+def merge_sort(l):
+    if len(l) > 1:
+        left = l[:len(l)//2]
+        right = l[len(l)//2:]
+        merge_sort(left)
+        merge_sort(right)
+        i = 0
+        j = 0
+        k = 0
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                l[k] = left[i]
+                i = i + 1
+            else:
+                l[k] = right[j]
+                j = j + 1
+            k = k + 1
+
+        while i < len(left):
+            l[k] = left[i]
+            i = i + 1
+            k = k + 1
+
+        while j < len(right):
+            l[k] = right[j]
+            j = j + 1
+            k = k + 1
+
+l = eval(input("Enter list:"))
+merge_sort(l)
+print(l)
+```
+
+## Memory Allocation :
+
+* Memory can be allocated in two types:
+   1. contiguous memory allocation
+   2. Discontiguous memory allocation
+
+#### 1. Contiguous Memory Allocation:
+
+* The values will get stored sequentially.
+
+#### 2. Discontiguous Memory Allocation :
+
+* The values will get stored randomly based on available memory block.
+* They are of 2 types:
+   1. Linear
+   2. Non-linear
+
+### 1. Linear 
+
+* If it is possible to access all the values in a single traverse.
+  
+  1. Stack
+  2. Queue
+  3. Linked List
+
+### 2. Non-linear
+
+* It is not possible to access all the values through single traverse.
+* The values get stored hierarchically.
+   1. Graph
+   2. Tree
+
+## Stack
+
+#### Stack :
+
+* It is the temporary memory which is used to store the value for temporary purpose.
+* Works on principle *First In First Out* (FIFO)/*First In Last Out*(FILO).
+  
+* There are *2 operations* we can perform they are :
+   1. push - inserting the value
+   2. pop - deleting the value
+
+* There are *2 ways to implement stack* they are:
+   1. using python list
+   2. using builtin / inbuilt module
+
+## 1. Stack using list :
+
+* Source code :- [stackusinglist.py](./stackusinglist.py)
+```
+
+  
