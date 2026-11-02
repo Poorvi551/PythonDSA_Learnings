@@ -431,4 +431,16 @@ st.pop()
 print(st)
 print(st[-1])
 ```
-  
+```
+from collections import deque
+st=deque()
+st.appendleft(10)
+st.appendleft(20)
+st.appendleft(30)
+st.appendleft(40)
+st.appendleft(50)
+st.appendleft(60)
+st.popleft()
+print(st)
+print(st)
+```  
